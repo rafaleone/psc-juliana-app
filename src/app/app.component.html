@@ -1,0 +1,110 @@
+<!-- HERO -->
+<header class="hero">
+  <div class="container">
+    <h1>Um espaço de escuta, acolhimento e transformação</h1>
+    <p>
+      Atendimento psicológico em Psicanálise para adultos, adolescentes e crianças.
+      <br />Presencial em Santo André - SP ou Online.
+    </p>
+    <a class="btn-primary" [href]="'https://wa.me/' + whatsappNumber + '?text=' + whatsappMessage" target="_blank" rel="noopener">
+      Agendar conversa <i class="fa-brands fa-whatsapp fa-lg"></i>
+    </a>
+  </div>
+</header>
+
+<!-- SOBRE -->
+<section class="section">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-image">
+        <div class="image-placeholder">
+          <img src="assets/images/juliana.jpg" alt="Juliana Anita da Silva" class="psychologist-photo" (click)="openImageModal()" style="cursor: pointer;">
+        </div>
+      </div>
+      <div class="about-text">
+        <h2>Sobre a Psicóloga</h2>
+        <p class="subtitle"><strong>Juliana Anita da Silva</strong> • Psicóloga • CRP 06/147693</p>
+        <p>Sou psicóloga com abordagem em <strong>Psicanálise</strong>, oferecendo um espaço seguro, ético e acolhedor para que cada pessoa possa falar livremente sobre suas angústias, conflitos e vivências.</p>
+        <p>O processo terapêutico é construído respeitando a singularidade de cada paciente, promovendo autoconhecimento, elaboração emocional e fortalecimento subjetivo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO AJUDA -->
+<section class="section section-alt">
+  <div class="container">
+    <h2>Como a Psicoterapia Pode Ajudar</h2>
+    <ul class="list-grid">
+      <li><i class="fas fa-brain icon"></i>Ansiedade e estresse</li>
+      <li><i class="fas fa-sad-cry icon"></i>Depressão</li>
+      <li><i class="fas fa-heart-broken icon"></i>Traumas e luto</li>
+      <li><i class="fas fa-restroom icon"></i>Problemas de relacionamento</li>
+      <li><i class="fas fa-person-arrow-down-to-line icon"></i>Baixa autoestima</li>
+      <li><i class="fas fa-comments icon"></i>Dificuldade de comunicação</li>
+      <li><i class="fas fa-user-circle icon"></i>Autoconhecimento</li>
+      <li><i class="fas fa-chart-bar icon"></i>Gestão de comportamentos</li>
+      <li><i class="fas fa-user-tie icon"></i>Insatisfação profissional</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ATENDIMENTO -->
+<section class="section">
+  <div class="container">
+    <h2>Atendimento Presencial e Online</h2>
+    <div class="cards">
+      <div class="card card-presencial">
+        <div class="card-icon">
+          <i class="fas fa-building"></i>
+        </div>
+        <h3>Presencial</h3>
+        <p>Atendimento realizado em clínica localizada em <strong>Santo André – SP</strong>, em ambiente acolhedor e reservado.</p>
+      </div>
+      <div class="card card-online">
+        <div class="card-icon">
+          <i class="fas fa-video"></i>
+        </div>
+        <h3>Online</h3>
+        <p>Sessões por videochamada, mantendo o mesmo cuidado, sigilo e ética do atendimento presencial.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCALIZAÇÃO -->
+<section class="section section-location">
+  <div class="container">
+    <h2>Localização</h2>
+    <p class="location-subtitle">Clínica localizada em Santo André - SP</p>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.361347132689!2d-46.52942422289672!3d-23.663032365338687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce42881e921ce7%3A0x8d471f1d052f32d9!2sR.%20Cel.%20Agenor%20de%20Camargo%2C%2081%20-%20Vila%20Assun%C3%A7%C3%A3o%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009020-220!5e0!3m2!1spt-PT!2sbr!4v1768604902236!5m2!1spt-PT!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <p class="location-address"><strong>Endereço:</strong> R. Cel. Agenor de Camargo, 81 - Vila Assunção, Santo André - SP, 09020-220</p>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta">
+  <div class="container">
+    <h2>Vamos Conversar?</h2>
+    <p>Iniciar a psicoterapia é um passo importante de cuidado consigo mesmo. Estou à disposição para conversar.</p>
+    <a class="btn-primary" [href]="'https://wa.me/' + whatsappNumber + '?text=' + whatsappMessage" target="_blank" rel="noopener">Agendar pelo WhatsApp <i class="fa-brands fa-whatsapp fa-lg"></i></a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <p>Juliana Anita da Silva – Psicóloga • CRP 06/147693</p>
+    <p>Atendimento presencial em Santo André e online</p>
+  </div>
+</footer>
+
+<!-- MODAL DE AMPLIAÇÃO DE IMAGEM -->
+<div class="image-modal" *ngIf="showImageModal" (click)="closeImageModal()">
+  <div class="modal-content" (click)="$event.stopPropagation()">
+    <span class="modal-close" (click)="closeImageModal()">&times;</span>
+    <img src="assets/images/juliana.jpg" alt="Juliana Anita da Silva">
+  </div>
+</div>

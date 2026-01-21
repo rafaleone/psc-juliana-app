@@ -1,0 +1,31 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #6b8e8a;
+  --primary-dark: #567370;
+  --background: #f7f8f7;
+  --text: #2e2e2e;
+  --muted: #666;
+  --white: #ffffff;
+}
+
+body {
+  font-family: 'Inter', 'Arial', sans-serif;
+  color: var(--text);
+  background-color: var(--background);
+  line-height: 1.6;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 1.25rem;
+  margin: 0 auto;
+}
+

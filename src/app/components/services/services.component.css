@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.services-container {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.services-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.service {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service-icon {
+    font-size: 3em;
+    color: #007bff;
+}
+
+.service-description {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #666;
+}
